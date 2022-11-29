@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andreewmelnik.github.io/",
+  "homepage": "https://andreewmelnik.github.io/CurrencyConverter",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

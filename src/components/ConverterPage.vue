@@ -6,11 +6,12 @@
 </template>
 
 <script>
-import CurrencyConverter from "@/Components/CurrencyConverter";
 import ExchangeRate from "@/Components/ExchangeRate";
+import CurrencyConverter from "@/Components/CurrencyConverter";
+
 export default {
   name: "ConverterPage",
-  components: { CurrencyConverter,ExchangeRate}
+  components: { ExchangeRate,CurrencyConverter}
 }
 
 </script>
