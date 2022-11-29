@@ -8,12 +8,12 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name:"Converter",
+    name:"converter",
     component: ConverterPage
   },
   {
-    path: '/Currencies',
-    name: "Currencies",
+    path: '/currencies',
+    name: "currencies",
     component: CurrenciesPage
   },
 ]
