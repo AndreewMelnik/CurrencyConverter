@@ -1,16 +1,16 @@
 <template>
   <div class="page">
-<!--  <ExchangeRate/>-->
-  <CurrencyConverter/>
+    <ExchangeRate/>
+    <CurrencyConverter/>
   </div>
 </template>
 
 <script>
 import CurrencyConverter from "@/Components/CurrencyConverter";
-// import ExchangeRate from "@/Components/ExchangeRate";
+import ExchangeRate from "@/Components/ExchangeRate";
 export default {
   name: "ConverterPage",
-  components: { CurrencyConverter}
+  components: { CurrencyConverter,ExchangeRate}
 }
 
 </script>

@@ -1,14 +1,14 @@
 <template>
-      <div class="navbar">
-        <v-toolbar-items class="flex-grow-1">
-          <v-btn
-              to="/" >Converter
-          </v-btn>
-          <v-btn
-              to="/Currencies" >Currencies
-          </v-btn>
-        </v-toolbar-items>
-      </div>
+  <div class="navbar">
+    <v-toolbar-items class="flex-grow-1">
+      <v-btn
+          to="/">Converter
+      </v-btn>
+      <v-btn
+          to="/Currencies">Currencies
+      </v-btn>
+    </v-toolbar-items>
+  </div>
 
 
 </template>
@@ -17,8 +17,7 @@
 export default {
   name: "app-header",
   data() {
-      return{
-      }
+    return {}
   },
 };
 </script>
@@ -32,21 +31,25 @@ export default {
   margin-left: auto;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
+
 a {
   color: black !important;
   text-decoration: none;
 }
+
 .v-btn {
-  height:10px !important;
+  height: 10px !important;
   text-transform: none;
   font-family: "AcuminPro-Medium";
   /*padding: 0 137px !important;*/
   flex-grow: 1;
-
 }
-.v-btn:before{
+
+.v-btn:before {
   opacity: 0 !important;
 }
 
