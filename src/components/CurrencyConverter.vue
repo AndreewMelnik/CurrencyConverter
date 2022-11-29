@@ -28,7 +28,7 @@
       <v-col class="d-flex justify-center align-center">
         <img
             class="exchange"
-            :src="require('../assets/icons/exchange.svg')"
+            :src="require('./exchange.svg')"
             alt="Exchange"
         />
       </v-col>
