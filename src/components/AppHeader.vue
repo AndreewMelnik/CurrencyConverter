@@ -44,13 +44,16 @@ a {
 .v-btn {
   height: 10px !important;
   text-transform: none;
-  font-family: "AcuminPro-Medium";
   /*padding: 0 137px !important;*/
   flex-grow: 1;
+  font-weight: 600 !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 1rem !important;
 }
 
 .v-btn:before {
   opacity: 0 !important;
+
 }
 
 </style>

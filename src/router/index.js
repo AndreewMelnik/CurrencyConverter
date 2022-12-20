@@ -6,25 +6,25 @@ import CurrenciesPage from "@/Components/CurrenciesPage";
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name:"Converter",
-    component: ConverterPage
-  },
-  {
-    path: '/CurrencyConverter/',
-    name:"Converter",
-    component: ConverterPage
-  },
-  {
-    path: '/Currencies',
-    name: "Currencies",
-    component: CurrenciesPage
-  },
+    {
+        path: '/',
+        name: "Converter",
+        component: ConverterPage
+    },
+    {
+        path: '/CurrencyConverter/',
+        name: "Converter",
+        component: ConverterPage
+    },
+    {
+        path: '/Currencies',
+        name: "Currencies",
+        component: CurrenciesPage
+    },
 ]
 
-export default new VueRouter( {
-  mode: 'history',
-  routes: routes
-}
+export default new VueRouter({
+        mode: 'history',
+        routes: routes
+    }
 )

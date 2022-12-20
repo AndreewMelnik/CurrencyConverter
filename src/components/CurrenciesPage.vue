@@ -48,8 +48,11 @@ export default {
 .list-item {
   flex-wrap: wrap;
   flex-direction: column;
-  max-height: 425px;
+  max-height: 700px;
   align-items: end;
 }
 
+.v-item-group {
+  padding: 8px
+}
 </style>

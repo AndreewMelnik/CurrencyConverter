@@ -2,55 +2,55 @@
   <v-row v-if="currencies!=null">
     <v-row class="flex-wrap wrap">
       <v-col cols="5">
-        <v-card max-width="500" class="mx-auto">
+        <v-card class="mx-auto" max-width="500">
           <v-card-text>
             <v-select
-                color="gray"
-                @change="convert"
                 v-model="selected[0]"
                 :items="getCountries"
-                standard
+                color="gray"
+                filled
                 label="Select currency"
+                @change="convert"
             ></v-select>
             <v-textarea
-                @input="convert"
                 v-model="inputed"
                 :rules="[rules.onlyNumbers]"
                 auto-grow
                 outlined
-                rows="1"
                 row-height="15"
+                rows="1"
+                @input="convert"
             ></v-textarea>
           </v-card-text>
         </v-card>
       </v-col>
 
-      <v-col class="d-flex justify-center align-center">
+      <v-col class="exchange-img">
         <img
-            class="exchange"
             :src="require('./exchange.svg')"
             alt="Exchange"
+            class="exchange"
         />
       </v-col>
 
       <v-col cols="5">
-        <v-card max-width="500" class="mx-auto">
+        <v-card class="mx-auto" max-width="500">
           <v-card-text>
             <v-select
-                @change="convert"
                 v-model="selected[1]"
                 :items="getCountries"
-                standard
+                filled
                 label="Select currency"
+                @change="convert"
             ></v-select>
             <v-textarea
                 v-model="result"
-                type="number"
-                readonly
                 auto-grow
                 outlined
-                rows="1"
+                readonly
                 row-height="15"
+                rows="1"
+                type="number"
             ></v-textarea>
           </v-card-text>
         </v-card>
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import {mapActions, mapState, mapGetters} from 'vuex'
+import {mapActions, mapGetters, mapState} from 'vuex'
 
 export default {
   name: "CurrencyConverter",
@@ -138,4 +138,11 @@ export default {
   margin: -2px !important;
 }
 
+.exchange-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 </style>
+

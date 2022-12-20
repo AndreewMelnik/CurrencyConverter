@@ -11,7 +11,7 @@ import CurrencyConverter from "@/Components/CurrencyConverter";
 
 export default {
   name: "ConverterPage",
-  components: { ExchangeRate,CurrencyConverter}
+  components: {ExchangeRate, CurrencyConverter}
 }
 
 </script>

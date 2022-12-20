@@ -17,7 +17,6 @@ export default {
   name: 'App',
   components: {AppHeader},
 
-
 };
 
 </script>
@@ -25,12 +24,11 @@ export default {
 <style lang="scss">
 
 
-
 #app {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-
+  //background: linear-gradient(-45deg, rgba(162, 54, 24, 0.91), rgba(190, 28, 91, 0.97), rgba(24, 116, 148, 0.89), rgba(26, 128, 103, 0.6));
+  //background-size: 400% 400%;
+  //animation: gradient 15s ease infinite;
+  background: #a9a9a978;
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -44,8 +42,8 @@ export default {
   }
 }
 
-h1, h2, h3 {
-  font-family: 'Indie Flower';
+.container {
+  max-width: 1185px !important;
 }
 
 .bg--light {
@@ -55,8 +53,46 @@ h1, h2, h3 {
 .exchange {
   max-width: 50px;
 }
+
 .row {
-  margin:-6px !important;
+  margin: -6px !important;
 }
 
+.v-card {
+  border-radius: 0 !important;
+}
+
+@media (max-width: 600px) {
+  html, .v-input {
+    font-size: 12px !important;
+  }
+  .exchange-img {
+    padding: 0px;
+  }
+  .exchange-img img {
+    width: 75% !important
+  }
+  .v-card__text {
+    padding: 8px !important;
+  }
+  .v-input__slot {
+    padding: 0 5px !important
+  }
+  h1 {
+    font-size: 1.5em !important;
+  }
+}
+
+@media (max-width: 400px) {
+  html, .v-input, {
+    font-size: 10px !important;
+  }
+  .v-label {
+    font-size: 12px !important;
+  }
+}
+
+.theme--dark.v-sheet {
+  background-color: #2b2b2b85 !important
+}
 </style>

@@ -5,42 +5,42 @@
         <v-card-text>
           <h1>Currency Converter</h1>
         </v-card-text>
-        <v-row justify="space-around" class="mt-3">
+        <v-row class="exchange-row">
           <v-col cols="3">
             <span> Курс USD </span>
             <v-textarea
-                class="currency"
-                type="number"
-                readonly
-                auto-grow
-                outlined
-                rows="8"
-                row-height="5"
                 :value="currencies.USD.Value"
+                auto-grow
+                class="currency"
+                outlined
+                readonly
+                row-height="5"
+                rows="8"
+                type="number"
             />
           </v-col>
           <v-col cols="3">
             <span> Курс EUR </span>
             <v-textarea
-                type="number"
-                readonly
+                :value="currencies.EUR.Value"
                 auto-grow
                 outlined
-                rows="8"
+                readonly
                 row-height="5"
-                :value="currencies.EUR.Value"
+                rows="8"
+                type="number"
             ></v-textarea>
           </v-col>
           <v-col cols="3">
             <span> Курс RUB </span>
             <v-textarea
-                type="number"
-                readonly
+                :value="currencies.GBP.Value"
                 auto-grow
                 outlined
-                rows="8"
+                readonly
                 row-height="5"
-                :value="currencies.GBP.Value"
+                rows="8"
+                type="number"
             >
             </v-textarea>
           </v-col>
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import {mapState, mapGetters} from 'vuex'
+import {mapGetters, mapState} from 'vuex'
 
 
 export default {
@@ -78,5 +78,10 @@ export default {
 h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+
+.exchange-row {
+  justify-content: space-around;
+  margin-top: 12px;
 }
 </style>

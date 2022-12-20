@@ -9,9 +9,9 @@ import store from "./store";
 Vue.config.productionTip = false
 
 new Vue({
-  vuetify,
-  router,
-  axios,
-  store,
-  render: h => h(App)
+    vuetify,
+    router,
+    axios,
+    store,
+    render: h => h(App)
 }).$mount('#app')
